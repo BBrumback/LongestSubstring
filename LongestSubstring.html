@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction('something LongerSomething TheLongestSomething banana')">Run code</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(str) {
+	var longest = ""
+    var split = str.split(" ");
+	for (var i = 0; i < split.length; i++)
+		if(longest.length < split[i].length)
+			longest = split[i]
+	
+    document.getElementById("demo").innerHTML = longest;
+}
+</script>
+</body>
+</html> 
